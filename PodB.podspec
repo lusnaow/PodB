@@ -76,8 +76,9 @@ Pod::Spec.new do |spec|
   #
 
   spec.source       = { :git => "https://github.com/lusnaow/PodB.git", :tag => "#{spec.version}" }
-  spec.source_files  = "PodB/Classes/*.{h,m}"
-  spec.public_header_files = "PodB/Classes/HeaderOne.h"
+  spec.source_files  = "PodB/Classes/**/*.{h,m}"
+  s.public_header_files = 'PodB/Classes/Public/*.h', 'PodB/Classes/Private/*.h'
+  s.private_header_files = 'PodB/Classes/Private/*.h'
 
 
 end
