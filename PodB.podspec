@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "PodB"
-  spec.version      = "1.0.3"
+  spec.version      = "1.0.4"
   spec.summary      = "A test Pod to varify private header."
 
   # This description is used to generate tags and improve search results.
@@ -77,8 +77,8 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/lusnaow/PodB.git", :tag => "#{spec.version}" }
   spec.source_files  = "PodB/Classes/**/*.{h,m}"
-  s.public_header_files = 'PodB/Classes/Public/*.h', 'PodB/Classes/Private/*.h'
-  s.private_header_files = 'PodB/Classes/Private/*.h'
+  spec.public_header_files = 'PodB/Classes/Public/*.h', 'PodB/Classes/Private/*.h'
+  spec.private_header_files = 'PodB/Classes/Private/*.h'
 
 
 end
