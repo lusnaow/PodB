@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "PodB"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.3"
   spec.summary      = "A test Pod to varify private header."
 
   # This description is used to generate tags and improve search results.
